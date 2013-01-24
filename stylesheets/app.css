@@ -1,0 +1,38 @@
+/* Foundation v2.2 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+	.header {padding-top: 20px;}
+	article {
+	 margin-bottom: 45px;
+	 padding-bottom: 35px;
+	 border-bottom: 1px dotted #eaeaea;
+	}
+	article.last {border: none; margin-bottom: 0; padding-bottom: 20px;}
+	.flex-direction-nav {display: none;}
+	.no-touch .flex-direction-nav {display: block;}
+	.bordered-img {border: 4px solid #e0e0e0; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;}
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
