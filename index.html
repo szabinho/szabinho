@@ -1,55 +1,48 @@
 <!DOCTYPE html>
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
 <head>
 	<meta charset="utf-8" />
 
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
+
 	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>UX portfolio of Szabolcs Pethő</title>
-  
+
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/combined-main.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
 
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
-	<![endif]-->
-
-
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<script src="javascripts/foundation/modernizr.foundation.js"></script>
 
 </head>
 <body>
-
-	<!-- container -->
+	<header class="container">
+		<div class="row">
+			<div class="twelve columns">
+				<h1>I help you to <em>design and build</em> awesome digital products.</h1>
+				<h2>And then make them even more awesome.</h2>
+			</div>
+		</div>
+	</header>
 	<div class="container">
-		<section class="header">
+		<section class="i-am">
 			<div class="row">
-				<div class="twelve columns">
-					<h1>Hi, my name is Szabolcs Pethő</h1>
-					<h4 class="subheader">I love to design and build user-centered, easy-to-use digital products which bring value to businesses.</h4>
-				<hr />	
+				<div class="five columns"><img class="circle" src="media/me.jpg"></div>
+				<div class="seven columns">
+					<h1>Hi, I'm Szabolcs and this is my UX portfolio.</h1>
+					<p>I love to design and build user-centered, easy-to-use digital products (websites and applications) which bring value to businesses.</p>
 				</div>
 			</div>
-			
 			<div class="row">
-				<div class="eight columns">
-					<img src="images/MGS_0877-2.jpg" />
-				</div>
-				<div class="four columns">
-					<h3>I believe</h3>
-					<p><blockquote>“it is not enough that we build products that function, that are understandable and usable, we also need to build products that bring joy and excitement, pleasure and fun, and, yes, beauty to people’s lives.”</blockquote> As Don Norman <a href="http://www.inspireux.com/2009/04/03/we-need-to-build-products-that-bring-joy-and-excitement-to-peoples-lives/">said.</a></p>
-					<h3>I do:</h3>
-					<p>observe people who are frustrated with using digital products and remove that frustration.</p>
-					<p>apply what we know about human behavior to interaction design to reach business and user goals.</p>
+				<div class="twelve columns">
+					<h2 class="section-title">I believe</h2>
+					<blockquote cite="http://www.inspireux.com/2009/04/03/we-need-to-build-products-that-bring-joy-and-excitement-to-peoples-lives/">“it is not enough that we build products that function, that are understandable and usable, we also need to build products that bring joy and excitement, pleasure and fun, and, yes, beauty to people’s lives.”</blockquote> 
+					<p><a href="http://www.inspireux.com/2009/04/03/we-need-to-build-products-that-bring-joy-and-excitement-to-peoples-lives/">As Don Norman said.</a></p>
 				</div>
 			</div>
 		</section>
@@ -57,7 +50,34 @@
 			<div class="row">
 				<div class="twelve columns">
 					<hr />
-					<h2>I've done:</h2>
+					<h2 class="section-title">I do:</h2>
+					<!-- <h4 class="subheader">I love what I do and I try to get better at it every day.</h4> -->
+					<div class="row">
+						<div class="four columns">
+							<h3>Design</h3>
+							<p>Design is how it works. It is about getting know the business and users, sketching out initial ideas, working on content, hierarchy, user flows and mixing colours and pushing pixels in Fireworks or Photoshop. It is Design with capital D.</p>
+							<p>I apply what we know about human behavior to interaction design to reach business and user goals.</p>
+						</div>
+						<div class="four columns">
+							<h3>Build</h3>
+							<p>I make the design work in a web browser. My inner geek loves to code and be a developer, so I speak HTML / CSS and Javascript (jQuery).</p>
+							<p>Sometimes I use Sass & Compass. I can build working prototypes quickly.</p>
+						</div>
+						<div class="four columns">
+							<h3>Test</h3>
+							<p>It is watching people use digital products, listening to what they say but more importantly what they do. It helps to find out users pain points and then remove that frustration.</p>
+							<p>It informs my decisions and helps me to iterate on my design and make it better.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="row">
+				<div class="twelve columns">
+					<hr />
+					<h2 class="section-title">I've done:</h2>
 					<article>
 						<div class="row">
 							<div class="five columns">
@@ -65,20 +85,19 @@
 								<h5 class="subheader">I was part of the in-house team who were responsible of the design and development.</h5>
 								<h5>My roles:</h5>
 								<ul>
-									<li>Took part in brainstorming, wireframing workshops with internal stakeholders and agency designers</li>
-									<li>Used TAP and Adobe Fireworks to make the prototype and refine wireframes.</li>
-									<li>Created user tasks for the test based on research reports from Vodafone Group.</li>
-									<li>Moderated the user tests and refined the prototype based on finding of the test.</li>
+									<li><span>Took part in brainstorming, wireframing workshops with internal stakeholders and agency designers.</span></li>
+									<li><span>Used TAP and Adobe Fireworks to make the prototype and refine wireframes.</span></li>
+									<li><span>Created user tasks for the test based on research reports from Vodafone Group.</span></li>
+									<li><span>Moderated the user tests and refined the prototype based on finding of the test.</span></li>
 								</ul>					
 							</div>
 							<div class="seven columns">
 								<div class="flex-container">
 									<div class="flexslider">
 										<ul class="slides" >
-											<li><img src="media/optimized/m-vf-prototype.gif"></li>
-											<!-- <li><img src="media/optimized/m-vf-wireframe.jpg"></li> -->
-											<li><img src="media/optimized/m-vf-prototype-2.png"></li>
-											<li><img src="media/optimized/m-vf-user-test.jpg"></li>
+											<li><img src="media/m-vf-prototype.gif"></li>
+											<li><img src="media/m-vf-prototype-2.png"></li>
+											<li><img src="media/m-vf-user-test.jpg"></li>
 										</ul>
 									</div>
 								</div>
@@ -92,13 +111,13 @@
 								<h5 class="subheader">I have created user task for the test based on stakeholder interviews and moderated the test using Silverback App.</h5>
 								<h5>Objectives were:</h5>
 								<ul>
-									<li>See what kind of frustration of our users have registering and using My Vodafone.</li>
-									<li>Where and how they are searching for support of specific problems.</li>
-									<li>Increase selfcare transactions to reduce call center load.</li>
+									<li><span>See what frustration of our users have registering and using My Vodafone.</span></li>
+									<li><span>Where and how they are searching for support of specific problems.</span></li>
+									<li><span>Increase selfcare transactions to reduce call center load.</span></li>
 								</ul>					
 							</div>
 							<div class="seven columns pull-five">
-								<ul>
+								<ul class="list-without-bullets">
 									<li><img class="bordered-img" src="media/vf-user-test.jpg"></li>
 								</ul>
 							</div>
@@ -111,10 +130,10 @@
 								<h5 class="subheader">A tour to communicate to our users what kind of selfcare solution we provide. Drive My Vodafone usage, increase the number of registered users.</h5>
 								<h5>My roles:</h5>
 								<ul>
-									<li>Sketching, wireframing of the initial idea.</li>
-									<li>Iterative design with in-house and agency ux designers.</li>
-									<li>Coordinating the implementation.</li>
-									<li class="hide-on-phones"><a href="http://vodafone.hu/online-ugyintezes/osszes-szolgaltatas">Open the website</a></li>
+									<li><span>Sketching, wireframing of the initial idea.</span></li>
+									<li><span>Iterative design with in-house and agency ux designers.</span></li>
+									<li><span>Coordinating the implementation.</span></li>
+									<li class="hide-for-small"><a href="http://vodafone.hu/online-ugyintezes/osszes-szolgaltatas">Open the website</a></li>
 								</ul>					
 							</div>
 							<div class="seven columns">
@@ -137,9 +156,9 @@
 								<h5 class="subheader">Prototyping and designing an e-bill payment and top-up solution for Vodafone SmartStore to get executive buy-in.</h5>
 								<h5>My roles:</h5>
 								<ul>
-									<li>Redesign previously available capabilities for tablet based kiosk.</li>
-									<li>Create a tapable prototype to convince the director of consumer business unit.</li>
-									<li>Finalize the design and create documentation for developers.</li>
+									<li><span>Redesign previously available capabilities for tablet based kiosk.</span></li>
+									<li><span>Create a tapable prototype to convince the director of consumer business unit.</span></li>
+									<li><span>Finalize the design and create documentation for developers.</span></li>
 								</ul>					
 							</div>
 							<div class="seven columns pull-five">
@@ -154,82 +173,92 @@
 							</div>
 						</div>
 					</article>
-					<article>
-						<div class="row">
+					<article class="last">
+						<div class="row" id="stylebolt">
 							<div class="five columns">
 								<h4>Stylebolt</h4>
 								<h5 class="subheader">We have reached almost 100 000 euros online only revenue in only 7 month after the launch of redesigned webshop from nearly 0 online only revenue.</h5>
 								<h5>My roles:</h5>
 								<ul>
-									<li>Design the information architecture and user interface of the webshop (wireframing).</li>
-									<li>Front end development based on wireframes and visual design.</li>
-									<li>Magento (open source shopping cart) customization.</li>
-									<li>Upload products, design product pages.</li>
-									<li class="hide-on-phones"><a href="http://stylebolt.hu/">Open the website</a></li>
+									<li><span>Design the information architecture and user interface of the webshop (wireframing).</span></li>
+									<li><span>Front end development based on wireframes and visual design.</span></li>
+									<li><span>Magento (open source shopping cart) customization.</span></li>
+									<li><span>Upload products, design product pages.</span></li>
+									<li class="hide-for-small"><a href="http://stylebolt.hu/">Open the website</a></li>
 								</ul>					
 							</div>
 							<div class="seven columns">
 								<div class="flex-container">
 									<div class="flexslider">
 										<ul class="slides" >
-											<li><img src="media/optimized/stylebolt-1.jpg"></li>
-											<li><img src="media/optimized/stylebolt-2.jpg"></li>
+											<li><img src="media/stylebolt-1.jpg"></li>
+											<li><img src="media/stylebolt-2.jpg"></li>
 										</ul>
 									</div>
 								</div>
 							</div>
 						</div>
 					</article>
-					<article class="last">
+					<!-- <article class="last">
 						<div class="row">
 							<div class="five columns push-seven">
 								<h4>Webpage for a Gasthouse in Austria</h4>
 								<h5 class="subheader">A quick work for an opening Gasthause in the beggining of the season to provide basic information and to generate leads.</h5>
 								<h5>Freelance job:</h5>
 								<ul>
-									<li>Consulting with the owner, discover business goals.</li>
-									<li>Copywrite, wireframe, visual design, front-end development and integration of the contact form.</li>
-									<li>I have handed over my client because of time constraints. My work is not live by this time.</li>
-									<li class="hide-on-phones"><a href="https://gomockingbird.com/mockingbird/#04rkt7i">Open wireframe (made with Mockingbird)</a></li>
+									<li><span>Consulting with the owner, discover business goals.</span></li>
+									<li><span>Copywrite, wireframe, visual design, front-end development and integration of the contact form.</span></li>
+									<li><span>I have handed over my client because of time constraints. My work is not live by this time.</span></li>
+									<li class="hide-for-small"><a href="https://gomockingbird.com/mockingbird/#04rkt7i">Open wireframe (made with Mockingbird)</a></li>
 								</ul>					
 							</div>
 							<div class="seven columns pull-five">
 								<div class="flex-container">
 									<div class="flexslider">
 										<ul class="slides" >
-											<li><img src="media/optimized/praebichl-1.gif"></li>
-											<li><img src="media/optimized/praebichl-2.jpg"></li>
+											<li><img src="media/praebichl-1.gif"></li>
+											<li><img src="media/praebichl-2.jpg"></li>
 										</ul>
 									</div>
 								</div>
 							</div>
 						</div>
-					</article>
+					</article> -->
 					<hr />
 				</div>
 			</div>
 		</section>
+		<section class="row">
+			<div class="twelve columns">
+				<h2 class="section-title">Others said about me:</h2>
+				<blockquote cite="http://www.linkedin.com/profile/view?id=22849438#recommendations">Szabi is one of the most talented person I have ever worked with. He is very creative and passionate about creating user friendly and usable websites. Moreover he always keeps in mind the business goals as well. He has a wide range of user experience design and business skills. 
+I truly endorse him!</blockquote>
+				<p>Gábor Labancz — Product manager at Vodafone <a href="http://www.linkedin.com/profile/view?id=22849438#recommendations">on LinkedIn.</a></p>
+				<hr />
+			</div>
+		</section>
+
 		<section>
 			<div class="row">
 				<div class="twelve columns">
 					<div class="row">
 						<div class="twelve columns">
-							<h2>You can contact me  or download my CV:</h2>
+							<h2 class="section-title">You can contact me  or download my CV:</h2>
 						</div>
 					</div>
 					<div class="row">
 						<div class="twelve columns">
 							<div class="three columns">
-								<p><a class="blue large button radius" href="http://uk.linkedin.com/in/szabinho">LinkedIn</a></p>
+								<p><a class="button" href="http://uk.linkedin.com/in/szabinho">LinkedIn</a></p>
 							</div>
 							<div class="three columns">
-								<p><a class="white large button radius" href="mailto:szabi@szabinho.com">Email</a></p>
+								<p><a class="secondary button" href="mailto:szabi@szabinho.com">Email</a></p>
 							</div>
 							<div class="three columns">
-								<p><a class="white large button radius" href="https://twitter.com/szabinho">Twitter</a></p>
+								<p><a class="secondary button" href="https://twitter.com/szabinho">Twitter</a></p>
 							</div>
 							<div class="three columns">
-								<p><a class="white large button radius" href="http://szabinho.com/szabinho-wp-a/wp-content/uploads/2010/05/cv-szabolcs-petho-with-contacts.pdf">Download CV</a></p>
+								<p><a class="secondary button" href="media/cv-szabolcs-petho.pdf">Download CV</a></p>
 							</div>
 						</div>
 					</div>
@@ -239,7 +268,7 @@
 		</section>
 		<footer>
 			<div class="row">
-				<div class="four columns show-on-desktops push-eight">
+				<div class="four columns hide-for-medium-down push-eight">
 					<p class="right">Did you try to resize the window? Pretty cool, huh?</p>
 				</div>
 				<div class="eight columns pull-four">
@@ -248,15 +277,65 @@
 			</div>
 		</footer>
 	</div>
-	<!-- container -->
+	
 
+	<!-- Included JS Files (Uncompressed) -->
+	<!-- <script src="javascripts/foundation/jquery.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	
+	<!-- // <script src="javascripts/foundation/jquery.cookie.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.event.move.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.event.swipe.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.clearing.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.forms.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.joyride.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.magellan.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.foundation.topbar.js"></script>
+	
+	// <script src="javascripts/foundation/jquery.placeholder.js"></script> -->
 
+	<script src="javascripts/jquery.flexslider-min.js"></script>
+	
 
+  <!-- Application Javascript, safe to override -->
+  <script src="javascripts/foundation/app.js"></script>
+  <script type="text/javascript">
 
-	<!-- Included JS Files -->
-	<script src="javascripts/jquery.min.js"></script>
-	<script src="javascripts/modernizr.foundation.js"></script>
-	<script src="javascripts/app-combined.js"></script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16258619-1']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
